@@ -21,6 +21,7 @@ import { servicesRoutes } from './routes/services.js';
 import { superAdminRoutes } from './routes/super-admin.js';
 import { prayerTimesRoutes } from './routes/prayer-times.js';
 import { createPrayerTimeService } from './services/prayer-times.js';
+import { khutbahRoutes } from './routes/khutbah.js';
 import {
   fetchServices,
   isKnownServiceCategory
@@ -100,6 +101,7 @@ export function buildApp(options = {}) {
     await superAdminRoutes(api);
     await servicesRoutes(api);
     await prayerTimesRoutes(api);
+    await khutbahRoutes(api);
   });
 
   app.setErrorHandler((error, _request, reply) => {
