@@ -384,6 +384,10 @@ class AppRouter {
                 : const BusinessRegistrationFlowRouteArgs(),
           ),
         );
+        case AppRoutes.khutbahRecord:
+  return MaterialPageRoute<void>(
+    builder: (_) => const KhutbahRecordScreen(),
+  );
       default:
         return MaterialPageRoute<void>(
           builder: (_) => _UnknownRouteScreen(routeName: settings.name),
