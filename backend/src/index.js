@@ -3,6 +3,10 @@ import { execFile } from 'node:child_process';
 
 import { startServer } from './server.js';
 import { env } from './config/env.js';
+import express from 'express';
+import cors from 'cors';
+// ... other imports ...
+import khutbahRoutes from './routes/khutbah.js';
 
 const execFileAsync = promisify(execFile);
 
