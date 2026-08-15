@@ -39,6 +39,8 @@ import '../screens/settings_detail_screens.dart';
 import '../screens/sort_filter_mosque.dart';
 import '../screens/signup_screen.dart';
 import 'app_routes.dart';
+import 'package:believer/features/khutbah/screens/khutbah_record_screen.dart';
+
 
 class AppRouter {
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
