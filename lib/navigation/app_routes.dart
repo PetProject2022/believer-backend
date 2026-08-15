@@ -49,6 +49,7 @@ class AppRoutes {
   static const String businessRegistrationUnderReview =
       '/business-registration/under-review';
   static const String businessRegistrationLive = '/business-registration/live';
+  static const String khutbahRecord = '/khutbah-record';
 
   static bool isBusinessRegistrationRoute(String? routeName) {
     switch (routeName) {
